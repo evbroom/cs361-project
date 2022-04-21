@@ -1,7 +1,7 @@
 import React from 'react';
 import Item from './Item';
 
-function ItemList({ items }) {
+function ItemList({ items, onEdit, onDelete }) {
     return (
         <table id="movies">
             <thead>
@@ -16,6 +16,8 @@ function ItemList({ items }) {
             </thead>
             <tbody>
                 {items.map((item, i) => <Item item={item}
+                    onEdit={onEdit}
+                    onDelete={onDelete}
                     key={i} />)}
             </tbody>
         </table>
