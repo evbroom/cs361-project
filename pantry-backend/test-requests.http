@@ -1,0 +1,48 @@
+### Create an exercise
+POST http://localhost:3000/pantry HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Chicken Breasts",
+    "quantity": 6,
+    "category": "Poultry",
+    "date": "06-24-21"
+}
+
+### Create another exercise
+POST http://localhost:3000/pantry HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bag of Frozen Broccoli",
+    "quantity": 1,
+    "category": "Vegetables",
+    "date": "06-22-21"
+}
+
+### Retrieve should return the 2 exercises we just created
+GET http://localhost:3000/pantry HTTP/1.1
+
+
+### Edit the Deadlift. 
+### NOTE: Set ID to the ID for Deadlift
+PUT http://localhost:3000/pantry/6260cd3454124661b20c0e30 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Chicken Breasts",
+    "quantity": 3,
+    "category": "lbs",
+    "date": "06-25-21"
+}
+
+### Verify that reps value for Deadlift is now 12
+GET http://localhost:3000/pantry HTTP/1.1
+
+
+### Delete the Deadlift
+### NOTE: Set ID to the ID for Deadlift
+DELETE http://localhost:3000/pantry/6260cda154124661b20c0e32 HTTP/1.1
+
+### Verify that the Deadlift exercise has been deleted
+GET http://localhost:3000/pantry HTTP/1.1
