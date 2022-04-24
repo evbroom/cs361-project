@@ -46,7 +46,7 @@ export const EditItemPage = ({ itemToEdit }) => {
                 value={category}
                 onChange={e => setCategory(e.target.value)} />
             <input
-                type="text"
+                type="date"
                 placeholder="Enter date here"
                 value={date}
                 onChange={e => setDate(e.target.value)} />
