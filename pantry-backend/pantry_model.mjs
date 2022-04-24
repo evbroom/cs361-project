@@ -21,7 +21,10 @@ const pantrySchema = mongoose.Schema({
     name: { type: String, required: true },
     quantity: { type: Number, required: true },
     category: { type: String, required: true },
-    date: { type: String, required: true }
+    date: { type: String, required: true},
+}, {
+		minimize: false,
+		timestamps: true,
 });
 
 /**
@@ -31,8 +34,8 @@ const Item = mongoose.model("Pantry", pantrySchema);
 
 /**
  * Create an exercise
- * @param {String} name 
- * @param {Number} quantity 
+ * @param {String} name
+ * @param {Number} quantity
  * @param {String} category
  * @param {String} date
  * @returns A promise. Resolves to the JSON object for the document created by calling save
@@ -46,11 +49,11 @@ const createItem = async (name, quantity, category, date) => {
 }
 
 /**
- * Retrive exercises 
- * @param {Object} filter 
- * @param {String} projection 
- * @param {Number} limit 
- * @returns 
+ * Retrive exercises
+ * @param {Object} filter
+ * @param {String} projection
+ * @param {Number} limit
+ * @returns
  */
 const findItem = async (filter, projection, limit) => {
     const query = Item.find(filter)
@@ -60,11 +63,11 @@ const findItem = async (filter, projection, limit) => {
 }
 
 /**
- * Replace the name, reps, weight, unit, and date of the exercise with the id value 
+ * Replace the name, reps, weight, unit, and date of the exercise with the id value
 provided
- * @param {String} _id 
- * @param {String} name 
- * @param {Number} quantity 
+ * @param {String} _id
+ * @param {String} name
+ * @param {Number} quantity
  * @param {String} category
  * @param {String} date
  * @returns A promise. Resolves to the number of documents modified
@@ -76,7 +79,7 @@ const replaceItem = async (_id, name, quantity, category, date) => {
 
 /**
  * Delete the exercise with provided id value
- * @param {String} _id 
+ * @param {String} _id
  * @returns A promise. Resolves to the count of deleted documents
  */
 const deleteById = async (_id) => {

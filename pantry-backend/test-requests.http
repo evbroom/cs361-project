@@ -24,9 +24,9 @@ content-type: application/json
 GET http://localhost:3000/pantry HTTP/1.1
 
 
-### Edit the Deadlift. 
+### Edit the Deadlift.
 ### NOTE: Set ID to the ID for Deadlift
-PUT http://localhost:3000/pantry/6260cd3454124661b20c0e30 HTTP/1.1
+PUT http://localhost:3000/pantry/626335743494cc4c2223afdb HTTP/1.1
 content-type: application/json
 
 {
@@ -42,7 +42,7 @@ GET http://localhost:3000/pantry HTTP/1.1
 
 ### Delete the Deadlift
 ### NOTE: Set ID to the ID for Deadlift
-DELETE http://localhost:3000/pantry/6260cda154124661b20c0e32 HTTP/1.1
+DELETE http://localhost:3000/pantry/626335743494cc4c2223afdb HTTP/1.1
 
 ### Verify that the Deadlift exercise has been deleted
 GET http://localhost:3000/pantry HTTP/1.1
