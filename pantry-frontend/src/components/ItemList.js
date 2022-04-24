@@ -3,7 +3,7 @@ import Item from './Item';
 
 function ItemList({ items, onEdit, onDelete }) {
     return (
-        <table id="movies">
+        <table id="items">
             <thead>
                 <tr>
                     <th>Name</th>

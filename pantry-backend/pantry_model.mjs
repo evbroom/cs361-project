@@ -89,14 +89,13 @@ const deleteById = async (_id) => {
 }
 
 // /**
-//  * Find the movie with the given ID value
+//  * Find the item with the given ID value
 //  * @param {String} _id
 //  * @returns
 //  */
-// const findMovieById = async (_id) => {
-//     const query = Movie.findById(_id);
+// const findItemById = async (_id) => {
+//     const query = Pantry.findById(_id);
 //     return query.exec();
 // }
 
-// export { createMovie, findMovies, replaceMovie, deleteById, findMovieById };
 export { createItem, findItem, replaceItem, deleteById };
