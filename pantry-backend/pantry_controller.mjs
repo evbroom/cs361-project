@@ -74,14 +74,14 @@ app.delete('/pantry/:_id', (req, res) => {
 });
 
 // /**
-//  * Retrive the movie corresponding to the ID provided in the URL.
+//  * Retrive the item corresponding to the ID provided in the URL.
 //  */
-// app.get('/movies/:_id', (req, res) => {
-//     const movieId = req.params._id;
-//     movies.findMovieById(movieId)
-//         .then(movie => {
-//             if (movie !== null) {
-//                 res.json(movie); // express sets the status code to 200 by default
+// app.get('/pantry/:_id', (req, res) => {
+//     const itemId = req.params._id;
+//     item.findItemById(itemId)
+//         .then(item => {
+//             if (item !== null) {
+//                 res.json(item); // express sets the status code to 200 by default
 //             } else {
 //                 res.status(404).json({ Error: 'Resource not found' });
 //             }

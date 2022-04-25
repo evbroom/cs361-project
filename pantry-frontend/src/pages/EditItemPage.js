@@ -21,10 +21,12 @@ export const EditItemPage = ({ itemToEdit }) => {
         });
         if (response.status === 200) {
             alert("Successfully edited the item!");
+            history.push('/');
         } else {
             alert(`Failed to edit the item, status code = ${response.status}`);
+            console.log(response)
         }
-        history.push('/');
+        //history.push('/');
     }
 
     return (

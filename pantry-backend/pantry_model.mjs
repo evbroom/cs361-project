@@ -21,10 +21,10 @@ const pantrySchema = mongoose.Schema({
     name: { type: String, required: true },
     quantity: { type: Number, required: true },
     category: { type: String, required: true },
-    date: { type: String, required: true},
+    date: { type: String, required: true },
 }, {
-		minimize: false,
-		timestamps: true,
+    minimize: false,
+    timestamps: true,
 });
 
 /**
@@ -33,7 +33,7 @@ const pantrySchema = mongoose.Schema({
 const Item = mongoose.model("Pantry", pantrySchema);
 
 /**
- * Create an exercise
+ * Create an item
  * @param {String} name
  * @param {Number} quantity
  * @param {String} category
@@ -42,14 +42,14 @@ const Item = mongoose.model("Pantry", pantrySchema);
  */
 
 const createItem = async (name, quantity, category, date) => {
-    // Call the constructor to create an instance of the model class Movie
+    // Call the constructor to create an instance of the model class Item
     const item = new Item({ name: name, quantity: quantity, category: category, date: date });
     // Call save to persist this object as a document in MongoDB
     return item.save();
 }
 
 /**
- * Retrive exercises
+ * Retrive item
  * @param {Object} filter
  * @param {String} projection
  * @param {Number} limit
@@ -63,7 +63,7 @@ const findItem = async (filter, projection, limit) => {
 }
 
 /**
- * Replace the name, reps, weight, unit, and date of the exercise with the id value
+ * Replace the name, quantity, category, and date of the id value
 provided
  * @param {String} _id
  * @param {String} name
@@ -73,7 +73,7 @@ provided
  * @returns A promise. Resolves to the number of documents modified
  */
 const replaceItem = async (_id, name, quantity, category, date) => {
-    const result = await Item.replaceOne({ _id: _id }, { name: name, quantity: quantity, category: category, date: date });
+    const result = await Item.updateOne({ _id: _id }, { name: name, quantity: quantity, category: category, date: date }, { runValidators: true });
     return result.modifiedCount;
 }
 
