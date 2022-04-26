@@ -94,7 +94,7 @@ const deleteById = async (_id) => {
 //  * @returns
 //  */
 // const findItemById = async (_id) => {
-//     const query = Pantry.findById(_id);
+//     const query = Item.findById(_id);
 //     return query.exec();
 // }
 

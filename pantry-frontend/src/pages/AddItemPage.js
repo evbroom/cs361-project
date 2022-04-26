@@ -23,7 +23,8 @@ export const AddItemPage = () => {
             alert("Successfully added the pantry item!");
             history.push('/');
         } else {
-            alert(`Failed to add the pantry item, status code = ${response.status}`);
+            alert(`Please fill out all fields`);
+            // alert(`Failed to add the pantry item, status code = ${response.status}`);
         }
         // history.push('/');
     };

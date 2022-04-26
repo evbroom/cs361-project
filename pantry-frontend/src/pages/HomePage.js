@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ItemList from '../components/ItemList';
+import DinnerSpinner from '../components/DinnerSpinner';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -40,11 +41,12 @@ function HomePage({ setItemToEdit }) {
     return (
         <>
             <h2>List of Freezer Items</h2>
-            <p>Manage the items in your deep freezer and keep track of when you added each item. Add, edit, or remove items as you need.</p>
-            <p>Click the Add New Item button to add an item to your freezer.</p>
-            <p>Click the edit button **add icon??** or the delete button to delete the item.</p>
-            <p>Not sure what to have? Click the Spin! button to randomly select an item from your freezer.</p>
-            <Link to="/add-item">Add New Item</Link>
+            <p className="infotext">Manage the items in your deep freezer and keep track of when you added each item. Add, edit, or remove items as you need.</p>
+            <p className="infotext">Click the Add New Item button to add an item to your freezer.</p>
+            <p className="infotext">Click the edit button **add icon??** or the delete button to delete the item.</p>
+            <p className="infotext">Not sure what to have? Click the Spin! button to randomly select an item from your freezer.</p>
+            <DinnerSpinner items={items}></DinnerSpinner>
+            <Link to="/add-item"><button>Add New Item</button></Link>
             <ItemList items={items} onEdit={onEdit} onDelete={onDelete}></ItemList>
         </>
     );
