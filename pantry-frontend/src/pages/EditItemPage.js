@@ -20,7 +20,7 @@ export const EditItemPage = ({ itemToEdit }) => {
             },
         });
         if (response.status === 200) {
-            alert("Successfully edited the item!");
+            // alert("Successfully edited the item!");
             history.push('/');
         } else {
             alert(`Please fill out all required fields`);
@@ -33,26 +33,46 @@ export const EditItemPage = ({ itemToEdit }) => {
     return (
         <div>
             <h1>Edit Item</h1>
-            <input
-                type="text"
-                placeholder="Enter name here"
-                value={name}
-                onChange={e => setName(e.target.value)} />
-            <input
-                type="number"
-                value={quantity}
-                placeholder="Enter quantity here"
-                onChange={e => setQuantity(e.target.value)} />
-            <input
-                type="text"
-                placeholder="Enter category here"
-                value={category}
-                onChange={e => setCategory(e.target.value)} />
-            <input
-                type="date"
-                placeholder="Enter date here"
-                value={date}
-                onChange={e => setDate(e.target.value)} />
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input
+                            type="text"
+                            placeholder="Enter name here"
+                            value={name}
+                            onChange={e => setName(e.target.value)} />
+                    </td>
+                    <td>
+                        <input
+                            type="number"
+                            value={quantity}
+                            placeholder="Enter quantity here"
+                            onChange={e => setQuantity(e.target.value)} />
+                    </td>
+                    <td>
+                        <input
+                            type="text"
+                            placeholder="Enter category here"
+                            value={category}
+                            onChange={e => setCategory(e.target.value)} />
+                    </td>
+                    <td>
+                        <input
+                            type="date"
+                            placeholder="Enter date here"
+                            value={date}
+                            onChange={e => setDate(e.target.value)} />
+                    </td>
+                </tr>
+            </tbody>
             <button
                 onClick={editItem}
             >Save and Update</button>

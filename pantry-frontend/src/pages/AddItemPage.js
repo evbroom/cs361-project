@@ -20,7 +20,7 @@ export const AddItemPage = () => {
             },
         });
         if (response.status === 201) {
-            alert("Successfully added the pantry item!");
+            // alert("Successfully added the pantry item!");
             history.push('/');
         } else {
             alert(`Please fill out all fields`);
@@ -32,26 +32,47 @@ export const AddItemPage = () => {
     return (
         <div>
             <h1>Add Item</h1>
-            <input
-                type="text"
-                placeholder="Enter name here"
-                value={name}
-                onChange={e => setName(e.target.value)} />
-            <input
-                type="number"
-                value={quantity}
-                placeholder="Enter quantity here"
-                onChange={e => setQuantity(e.target.value)} />
-            <input
-                type="text"
-                placeholder="Enter category here"
-                value={category}
-                onChange={e => setCategory(e.target.value)} />
-            <input
-                type="date"
-                placeholder="Enter date here"
-                value={date}
-                onChange={e => setDate(e.target.value)} />
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input
+                        type="text"
+                        placeholder="Enter name here"
+                        value={name}
+                        onChange={e => setName(e.target.value)} /></td>
+                    <td>
+                        <input
+                            type="number"
+                            value={quantity}
+                            placeholder="Enter quantity here"
+                            onChange={e => setQuantity(e.target.value)} />
+                    </td>
+                    <td>
+                        <input
+                            type="text"
+                            placeholder="Enter category here"
+                            value={category}
+                            onChange={e => setCategory(e.target.value)} />
+                    </td>
+                    <td>
+                        <input
+                            type="date"
+                            placeholder="Enter date here"
+                            value={date}
+                            onChange={e => setDate(e.target.value)} />
+                    </td>
+
+
+                </tr>
+
+            </tbody>
             <button
                 onClick={addItem}
             >Add</button>
