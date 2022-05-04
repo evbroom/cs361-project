@@ -29,6 +29,10 @@ export const AddItemPage = () => {
         // history.push('/');
     };
 
+    const cancel = () => {
+        history.push('/');
+    }
+
     return (
         <div>
             <h1>Add Item</h1>
@@ -76,6 +80,9 @@ export const AddItemPage = () => {
             <button
                 onClick={addItem}
             >Add</button>
+            <button
+                onClick={cancel}
+            >Cancel</button>
         </div>
     );
 }

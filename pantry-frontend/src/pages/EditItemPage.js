@@ -30,6 +30,10 @@ export const EditItemPage = ({ itemToEdit }) => {
         //history.push('/');
     }
 
+    const cancel = () => {
+        history.push('/');
+    }
+
     return (
         <div>
             <h1>Edit Item</h1>
@@ -76,6 +80,9 @@ export const EditItemPage = ({ itemToEdit }) => {
             <button
                 onClick={editItem}
             >Save and Update</button>
+            <button
+                onClick={cancel}
+            >Cancel</button>
         </div>
     );
 }
