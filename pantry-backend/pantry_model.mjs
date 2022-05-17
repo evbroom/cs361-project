@@ -63,6 +63,15 @@ const findItem = async (filter, projection, limit) => {
 }
 
 /**
+ * Find Random Item
+ * @returns
+ */
+const randomItem = async () => {
+    const query = Item.aggregate([{ $sample: { size: 1 } }])
+    return query.exec();
+}
+
+/**
  * Replace the name, quantity, category, and date of the id value
 provided
  * @param {String} _id
@@ -78,7 +87,7 @@ const replaceItem = async (_id, name, quantity, category, date) => {
 }
 
 /**
- * Delete the exercise with provided id value
+ * Delete the pantry item with provided id value
  * @param {String} _id
  * @returns A promise. Resolves to the count of deleted documents
  */
@@ -98,4 +107,4 @@ const deleteById = async (_id) => {
 //     return query.exec();
 // }
 
-export { createItem, findItem, replaceItem, deleteById };
+export { createItem, findItem, replaceItem, deleteById, randomItem };

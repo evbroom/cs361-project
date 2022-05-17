@@ -22,7 +22,7 @@ app.post('/pantry', (req, res) => {
 });
 
 /**
- * Retrieve all exercises
+ * Retrieve all pantry items
  */
 app.get('/pantry', (req, res) => {
     let filter = {};
@@ -56,7 +56,7 @@ app.put('/pantry/:_id', (req, res) => {
 });
 
 /**
- * Delete the exercise whose id is provided in the query parameters
+ * Delete the pantry item whose id is provided in the query parameters
  */
 app.delete('/pantry/:_id', (req, res) => {
     pantryItems.deleteById(req.params._id)
@@ -72,6 +72,22 @@ app.delete('/pantry/:_id', (req, res) => {
             res.status(500).json(error);
         });
 });
+
+/**
+ * Retrieve random pantry item
+ */
+app.get('/randomItem', (req, res) => {
+    let filter = {};
+    pantryItems.randomItem(filter)
+        .then(pantryItem => {
+            res.send(pantryItem);
+        })
+        .catch(error => {
+            console.error(error);
+            res.status(500).json(error);
+        });
+});
+
 
 // /**
 //  * Retrive the item corresponding to the ID provided in the URL.

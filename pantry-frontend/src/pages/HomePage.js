@@ -44,7 +44,7 @@ function HomePage({ setItemToEdit }) {
             <p className="infotext">Manage the items in your deep freezer and keep track of when you added each item. Add, edit, or remove items as you need.</p>
             <p className="infotext">Click the Add New Item button to add an item to your freezer.</p>
             <p className="infotext">Click the edit button or the delete button to delete the item.</p>
-            <DinnerSpinner items={items}></DinnerSpinner>
+            <DinnerSpinner></DinnerSpinner>
             <Link to="/add-item"><button>Add New Item</button></Link>
             <ItemList items={items} onEdit={onEdit} onDelete={onDelete}></ItemList>
         </>
