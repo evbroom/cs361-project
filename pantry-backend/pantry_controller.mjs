@@ -88,25 +88,6 @@ app.get('/randomItem', (req, res) => {
         });
 });
 
-
-// /**
-//  * Retrive the item corresponding to the ID provided in the URL.
-//  */
-// app.get('/pantry/:_id', (req, res) => {
-//     const itemId = req.params._id;
-//     item.findItemById(itemId)
-//         .then(item => {
-//             if (item !== null) {
-//                 res.json(item); // express sets the status code to 200 by default
-//             } else {
-//                 res.status(404).json({ Error: 'Resource not found' });
-//             }
-//         })
-//         .catch(error => {
-//             res.status(400).json({ Error: 'Request failed' });
-//         });
-// });
-
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}...`);
 });

@@ -97,14 +97,5 @@ const deleteById = async (_id) => {
     return result.deletedCount;
 }
 
-// /**
-//  * Find the item with the given ID value
-//  * @param {String} _id
-//  * @returns
-//  */
-// const findItemById = async (_id) => {
-//     const query = Item.findById(_id);
-//     return query.exec();
-// }
 
 export { createItem, findItem, replaceItem, deleteById, randomItem };
