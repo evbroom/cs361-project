@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
@@ -10,7 +10,7 @@ function App() {
   const [itemToEdit, setItemToEdit] = useState();
 
   return (
-    <div className="App">
+    <div className="p-5">
       <Router>
         <div className="App-header">
           <Route path="/" exact>

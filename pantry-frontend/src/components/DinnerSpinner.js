@@ -14,18 +14,20 @@ function DinnerSpinner() {
     }
 
     return (
-        <div>
-            <h2>Dinner Spinner</h2>
-            <p className="infotext">Not sure what to have? Click the Spin! button to randomly select an item from your freezer.</p>
+        <div className="flex items-start flex-col p-3 border border-gray-200 mt-3 mb-4">
+            <h2 className="text-xl font-semibold leading-normal mt-0  text-gray-800">Dinner Spinner</h2>
+            <p className="text-gray-800 text-sm mb-2">Not sure what to have? Click the Spin! button to randomly select an item from your freezer.</p>
             <div className="dinner-spinner">
                 <p>
-                    Name: {activeItem.name}
+                    <span>Name: </span>
+                    <span className="font-medium">{activeItem.name}</span>
                 </p>
                 <p>
-                    Date: {activeItem.date}
+                    <span>Date: </span>
+                    <span className="font-medium">{activeItem.date}</span>
                 </p>
-                <button onClick={getRandomItem}>Spin!</button>
             </div>
+            <button className="bg-blue-500 text-white py-2 text-sm px-3 rounded mt-3" onClick={getRandomItem}>Spin!</button>
 
         </div>
     );
