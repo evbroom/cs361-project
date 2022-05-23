@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ItemList from '../components/ItemList';
 import DinnerSpinner from '../components/DinnerSpinner';
+import RecipeGenerator from '../components/RecipeGenerator';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -45,6 +46,7 @@ function HomePage({ setItemToEdit }) {
             <p className="text-gray-800 text-sm">Click the Add New Item button to add an item to your freezer.</p>
             <p className="text-gray-800 text-sm">Click the Edit button or the Delete button to delete the item.</p>
             <DinnerSpinner></DinnerSpinner>
+            <RecipeGenerator></RecipeGenerator>
             <Link to="/add-item"><button className="bg-green-500 text-white py-2 text-sm px-3 rounded">Add New Item</button></Link>
             <ItemList items={items} onEdit={onEdit} onDelete={onDelete}></ItemList>
         </>

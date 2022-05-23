@@ -12,6 +12,7 @@ export const AddItemPage = () => {
 
     const addItem = async () => {
         const newItem = { name, quantity, category, date };
+        console.log(newItem)
         const response = await fetch('/pantry', {
             method: 'POST',
             body: JSON.stringify(newItem),

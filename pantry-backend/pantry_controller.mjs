@@ -1,5 +1,8 @@
 import * as pantryItems from './pantry_model.mjs';
 import express from 'express';
+import bodyParser from 'body-parser';
+
+import fs from 'fs';
 
 const PORT = 3000;
 
@@ -87,6 +90,24 @@ app.get('/randomItem', (req, res) => {
             res.status(500).json(error);
         });
 });
+
+
+/**
+ * Write recipe search to text file for recipe finder microservice execution 
+ */
+app.use('/recipes', bodyParser.text({ type: '*/*' }), (req, res) => {
+    let text = req.body;
+    console.log(text)
+    let data = JSON.stringify(Object.values(text)).replace("[", "").replace("\"", "").replace("]", "").replace("\"", "").toLowerCase();
+    console.log(data)
+    fs.writeFile('../pantry-frontend/src/recipe.txt', data, function (err) {
+        if (err) {
+            console.log(err)
+        }
+    })
+
+})
+
 
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}...`);
