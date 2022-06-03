@@ -14,7 +14,6 @@ function RecipeGenerator() {
             },
         });
     };
-
     return (
         <div>
             <h2 className="text-xl font-semibold leading-normal mt-0  text-gray-800">Recipe Generator</h2>
@@ -32,9 +31,11 @@ function RecipeGenerator() {
                 {recipesJSON.error ? <p className="text-red-600">{recipesJSON.error}</p> :
                     recipesJSON.recipes.map((recipe) =>
                         <div>
-                            <p>{recipe.name}</p>
-                            <p>{recipe.ingredients_raw_str}</p>
-                            <p>{recipe.steps}</p>
+                            <h2 className="mb-2 text-lg font-semibold leading-normal text-gray-800">{recipe.name}</h2>
+                            <p className="font-semibold">Ingredients</p>
+                            <p className="mb-2">{recipe.ingredients_raw_str.replace(/['"]+/g, '').replace(/\[/g, '').replace(/\]/g, '').replace(/,/g, ', ')}</p>
+                            <p className="font-semibold">Directions</p>
+                            <p className="mb-10">{recipe.steps.replace(/['"]+/g, '').replace(/\[/g, '').replace(/\]/g, '').replace(/,/g, ', ')}</p>
                         </div>
                     )}
             </div>
