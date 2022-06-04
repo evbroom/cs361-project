@@ -1,22 +1,22 @@
 {
   "recipes": [
     {
-      "name": "Greek Rice Pudding",
-      "ingredients_raw_str": "[\"2       eggs, beaten \",\"3   ounces    vanilla pudding mix, cook and serve type \",\"1/2  cup    sugar\",\"14   ounces    condensed milk\",\"29   ounces    water, use 2 condensed milk measures \",\"2   cups    cooked rice\"]",
+      "name": "Rumblethumps",
+      "ingredients_raw_str": "[\"1   bunch   large kale, thinly sliced-about 8 cups \",\"2 1/2  lbs    russet potatoes, peeled, coarsely chopped \",\"1/2  cup    unsalted butter\",\"1/2  cup    sour cream\",\"2   medium    onions, chopped fine \",\"1/2  cup   chopped leek\",\"2   small   cloves garlic cloves\",\"3   cups   grated extra-sharp cheddar cheese (12 oz.)\",\"  salt and pepper\"]",
+      "servings": "6",
+      "steps": "['Butter an 8 cup baking dish.', 'Preheat oven to 350\u00b0F.', 'Saute Chopped onion in 2 tbsp butter until translucent.', 'Blanch Kale in a large pot of boiling salted water until.tender, then quench in ice water.', 'Using a slotted spoon, transfer Kale to a bowl.', 'Return water to a boil and add potatoes.', 'Cook until tender.', 'Drain and return potatoes to the pot.', 'Add butter, finely minced garlic and sour cream and mash potatoes.', 'Mix in leeks, \u00bd of the sauted onion and then Kale to potatoes.', 'Add half the cheese and mash into potatoes.', 'Season to taste with salt and pepper.', 'Spoon mixture into prepared dish.', 'Sprinkle with cheese.', 'Add sauted onion to the top of Dish in a 2-3 inch wide strip.', 'down the center.', 'Bake about 35 minutes until cheese bubbles.']"
+    },
+    {
+      "name": "Sausage &amp; Spinach Eggs (With Mushrooms)",
+      "ingredients_raw_str": "[\"10   ounces    breakfast sausage (or italian)\",\"1   teaspoon    olive oil\",\"1       onion, finely chopped \",\"4   ounces    fresh mushrooms, sliced \",\"1/2      jalapeno, finely chopped \",\"1       garlic clove, minced \",\"1/8  teaspoon    ground nutmeg\",\"1/8  teaspoon    dried oregano\",\"1/8  teaspoon    seasoning salt\",\"1/8  teaspoon    pepper\",\"4   cups    fresh spinach, torn  (or kale)\",\"5       eggs\",\"1/8  teaspoon    hot pepper sauce\",\"3   ounces    cheese, shredded  (I use monterey)\",\"1   ounce    feta cheese, shredded \"]",
       "servings": "4",
-      "steps": "['In a medium saucepan combine, eggs, pudding mix, sugar and condensed milk.', 'Mix well.', 'Add water, then rice.', 'Bring to a boil over medium low heat, stirring constantly to prevent burning.', 'Remove from heat.', 'Cool at room temperature.']"
+      "steps": "['In a large ovenproof skillet; crumble sausage &amp; cook over medium heat until no longer pink. Drain &amp; set aside.', 'In the same skillet with oil, saut\u00e9 the onions, mushrooms, garlic &amp; seasonings until vegetables are just tender.', 'Add spinach in batches; cook over medium-low heat for 3 - 4 min or until spinach begins to wilt.', 'In a large bowl, whisk eggs &amp; hot pepper sauce.', 'Return sausage to skillet &amp; pour egg mixture evenly over top.', 'As eggs start to set, lift edges, letting uncooked portion flow underneath.', 'Cook 8 \u2013 10 mins until eggs are nearly set.', 'Meanwhile, preheat broiler.', 'Broil egg mixture 6\u201d from the heat for 30 - 60 seconds or until set.', 'Sprinkle with cheese; broil 30 seconds longer or until melted.', 'Cut into wedges &amp; serve immediately.']"
     },
     {
-      "name": "Pumpkin or Squash Pie",
-      "ingredients_raw_str": "[\"1   cup    pumpkin or 1   cup    squash\",\"1/2  cup    brown sugar\",\"1/4  cup    molasses\",\"1   tablespoon    butter\",\"1   teaspoon    nutmeg\",\"1   teaspoon    cinnamon\",\"1/2  teaspoon    ginger\",\"3/4  teaspoon    salt\",\"2       eggs\",\"1   cup    evaporated milk\"]",
-      "servings": "1",
-      "steps": "['Mix all ingredients and beat together with a mixer.  pour into pastry lined pie pan.', 'Bake at 425F for about 20 minutes, then at 375F for 20-25 minutes.', 'Serve warm or cold with whipped cream.']"
-    },
-    {
-      "name": "Toffee Almond Biscotti",
-      "ingredients_raw_str": "[\"2   cups    all-purpose flour\",\"1   cup    granulated sugar\",\"1   teaspoon    baking powder\",\"1/8  teaspoon    salt\",\"3   large    eggs\",\"2   tablespoons    Amaretto or 1 1/2  teaspoons    almond extract\",\"1   teaspoon    vanilla extract\",\"3/4  cup    slivered almonds\",\"3/4  cup    toffee pieces\"]",
-      "servings": "1",
-      "steps": "['Preheat oven to 300 degrees F.', 'Line cookie sheet with parchment paper; set aside.', 'In a medium bowl, whisk together flour, baking powder, salt, sugar, almonds, and toffee bits; set aside.', 'In a large bowl, beat together eggs, Amaretto, and vanilla extract with an electric mixer.', 'Mix in dry ingredients with eggs, mix until combined. Dough will be sticky, but do not add more flour.', 'Flour surface of parchment paper lined cookie sheet, roll dough out on surface into a log about 3 inches in diameter.', 'Bake about 50 minutes, or until firm and dry.', 'Remove from oven and let cool for 10 minutes.', 'Use a serrated knife and cut into 1/2-inch slices.', 'Lay slices cut side down on cookie sheet and return to even for 20 minutes.', 'Remove from oven and turn slices over and bake another 20 minutes.']"
+      "name": "Nutty Pasta With Wilted Winter Greens",
+      "ingredients_raw_str": "[\"3   cups    kale, rinsed, dried, and torn into manageable pieces \",\"2   cups    mushrooms, sliced and dirt wiped away \",\"1 (12   ounce) package   pasta, shapes of your choice  (I usually love anything made from whole grains)\",\"2       garlic cloves, minced finely \",\"1/2  cup    white onion, finely diced \",\"1/4  cup    walnut pieces, toasted \",\"3   tablespoons    extra virgin olive oil\",\"1/2  cup    parmesan cheese, fresh grated \",\"  cooking spray\",\"  salt\",\"  pepper\",\"  red pepper flakes\"]",
+      "servings": "6",
+      "steps": "[\"Cook the pasta according to package instructions to al'dente or slightly firmer.\", 'Heat a large skillet with non-stick cooking spray and Olive Oil over medium-high heat.   Sweat onions for a few minutes.  Add Mushrooms and cook for 2-3 minutes.   Add greens and garlic.', 'Ensure that you are seasoning every step of the way to build your layers of flavor.', 'Cover and let cook until greens are completely wilted over medium low heat.', 'Add cooked, drained pasta to the skillet with greens.   Add a small ladle full cooking water from pasta, and allow to cook at low heat for a few minutes until flavors have combined.', 'Serve with toasted walnuts and fresh grated parmiggiano (or romano) cheese.']"
     }
   ]
 }

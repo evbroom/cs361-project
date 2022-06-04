@@ -34,6 +34,7 @@ export const EditItemPage = ({ itemToEdit }) => {
     return (
         <div>
             <h1 className="text-3xl font-semibold leading-normal mt-0 mb-5 text-gray-800">Edit Item</h1>
+            <p className="text-gray-800 text-sm">Edit an item in your freezer. Please fill out all fields.</p>
             <thead>
                 <tr>
                     <th className="text-center text-sm font-medium text-gray-900 px-6 py-2 text-left">Name</th>
