@@ -8,7 +8,6 @@ function DinnerSpinner({ itemItem }) {
     const getRandomItem = async () => {
         const response = await fetch('/randomItem');
         const data = await response.json();
-        //console.log(data)
         setActiveItem(data[0])  // the json file only has one element, so we'll use that
 
     }

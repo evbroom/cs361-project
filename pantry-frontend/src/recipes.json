@@ -1,0 +1,22 @@
+{
+  "recipes": [
+    {
+      "name": "Heart-Healthy Salmon Quesadillas",
+      "ingredients_raw_str": "[\"2   teaspoons    extra virgin olive oil\",\"1   cup    kale, stems removed, shredded into bite-sized pieces \",\"1   teaspoon    kosher salt or 1   teaspoon    sea salt\",\"1/2  cup   shredded low-fat cheddar cheese or 1/2  cup    colby cheese\",\"1/2  cup   shredded asiago cheese\",\"32   inches    whole wheat tortillas\",\"6   ounces    canned pink salmon, flaked \"]",
+      "servings": "4",
+      "steps": "['Heat 1 teaspoons of the olive oil in a medium (10-inch) nonstick skillet over medium heat.', 'Place the kale in the skillet and cook until just wilted, about 4 to 5 minutes. Season with the kosher salt or sea salt. Remove the kale from the skillet and set aside.', 'In a small bowl, mix together the shredded cheeses. Set aside.', 'Heat the remaining teaspoon of olive oil in the same skillet over medium heat. Place one tortilla in the bottom of the skillet.', 'Top half of the tortilla with 1/4 cup of the kale, one-quarter of the flaked salmon and 1/4 cup of the shredded cheese mixture.', 'Fold the other half of the tortilla over the filling and cook for one minute, pressing down lightly with the back of a spatula.', 'Using tongs, gently flip the quesadilla over and cook another minute or two, until lightly browned. Repeat with remaining three tortillas and fillings.', 'Cut each quesadilla into three triangles. Serve immediately with guacamole, tomato salsa and non-fat sour cream, if desired.']"
+    },
+    {
+      "name": "Baked Breakfast Greens",
+      "ingredients_raw_str": "[\"2   cups   baby kale leaves\",\"2   cups    Baby Spinach\",\"1/4  cup    diced onion\",\"1       garlic clove, minced \",\"2 -4       eggs\",\"  goat cheese, crumbles \",\"2   tablespoons    olive oil\",\"1/2  teaspoon    paprika or 1/2  teaspoon    seasoning, of choice \",\"  kosher salt, and pepper as needed \"]",
+      "servings": "4",
+      "steps": "['Preheat the oven to 350.', \"Heat the olive oil in a saute pan over medium heat. We're trying to be healthy here, but you can add a little butter too.\", 'Add the onions and saute until translucent, about 3-5 minutes. Add the garlic and saute until fragrant, about 30 seconds. Season with salt, pepper, and paprika.', 'Add the greens in batches and cook until wilted. Season just a tee bit more.', \"Transfer to a small casserole dish and crack over how ever many eggs you'd like. To play it safe, crack the eggs in a bowl first to prevent egg shells.\", 'Crumble over some crumbled goat cheese and bake for 10-12 minutes until the egg whites are firm.', 'Enjoy!']"
+    },
+    {
+      "name": "Penne Vegetable Carbonarra Inspired Pasta",
+      "ingredients_raw_str": "[\"8   ounces    penne\",\"2       eggs\",\"2   tablespoons    butter\",\"1   tablespoon    mayonnaise\",\"2   teaspoons    Dijon mustard\",\"2   cups    Brussels sprouts\",\"2   cups    kale\",\"2       zucchini\",\"1   tablespoon    garlic\",\"1   teaspoon    salt and pepper\",\"1   slice    American cheese\"]",
+      "servings": "4",
+      "steps": "['Cooke vegetables until tender.', 'Salt pasta water well, cook noodles until tender, do not rinse and save 1/2 cup pasta water.', 'Whip eggs through dijon.', 'Put HOT noodles in a large bowl.', 'Pour egg mix on noodles and put your cheese slice on top.', 'Put HOT veggies on top and mix everything together.', 'Add reserved pasta water, little at a time.', 'Let sit for a minute, then eat.', 'Important: pasta must be very hot in order to cook your eggs.']"
+    }
+  ]
+}

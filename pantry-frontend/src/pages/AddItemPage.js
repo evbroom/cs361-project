@@ -27,7 +27,6 @@ export const AddItemPage = () => {
             alert(`Please fill out all fields`);
             // alert(`Failed to add the pantry item, status code = ${response.status}`);
         }
-        // history.push('/');
     };
 
     const cancel = () => {
@@ -78,10 +77,7 @@ export const AddItemPage = () => {
                             value={date}
                             onChange={e => setDate(e.target.value)} />
                     </td>
-
-
                 </tr>
-
             </tbody>
             <button
                 className="bg-green-500 text-white py-2 text-sm px-3 rounded mr-3 mt-4"
