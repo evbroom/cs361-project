@@ -41,7 +41,7 @@ function HomePage({ setItemToEdit }) {
 
     return (
         <>
-            <h2 className="text-3xl font-semibold leading-normal mt-0 mb-5 text-gray-800">List of Freezer Items</h2>
+            <h2 className="text-3xl font-semibold leading-normal mt-0 mb-5 text-gray-800">Freezer Tracker</h2>
             <p className="text-gray-800 text-sm">Manage the items in your deep freezer and keep track of when you added each item. Add, edit, or remove items as you need.</p>
             <p className="text-gray-800 text-sm">Click the Add New Item button to add an item to your freezer.</p>
             <p className="text-gray-800 text-sm">Click the Edit button or the Delete button to delete the item.</p>
