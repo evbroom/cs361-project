@@ -21,11 +21,9 @@ export const AddItemPage = () => {
             },
         });
         if (response.status === 201) {
-            // alert("Successfully added the pantry item!");
             history.push('/');
         } else {
             alert(`Please fill out all fields`);
-            // alert(`Failed to add the pantry item, status code = ${response.status}`);
         }
     };
 
