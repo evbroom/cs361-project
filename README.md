@@ -1,5 +1,5 @@
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Freezer Tracking App
 
 This is an MVP of a freezer tracking app that integrates a teammate's microservice.
 
